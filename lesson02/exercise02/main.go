@@ -1,10 +1,8 @@
 package main
 
 import (
-
 	"fmt"
 )
-
 
 func calc(a int, b int, o string) int {
 	var ret int
@@ -21,25 +19,23 @@ func calc(a int, b int, o string) int {
 	default:
 
 	}
-return ret
+	return ret
 }
-
 
 func main() {
 	fmt.Println("Привіт! Я маленький калькулятор, можу виконувати прості дії з операціями + - / *")
 
 	fmt.Printf("Введіть перший операнд: ")
 	var opA int
-	_,_ = fmt.Scan(&opA)
+	_, _ = fmt.Scan(&opA)
 
 	fmt.Printf("Введіть другий операнд: ")
 	var opB int
-	_,_ = fmt.Scan(&opB)
+	_, _ = fmt.Scan(&opB)
 
 	fmt.Printf("Оберіть операцію [+ - / *]: ")
 	var operation string
-	_,_ = fmt.Scan(&operation)
-
+	_, _ = fmt.Scan(&operation)
 
 	fmt.Printf("Результат: %d \n", calc(opA, opB, operation))
 
